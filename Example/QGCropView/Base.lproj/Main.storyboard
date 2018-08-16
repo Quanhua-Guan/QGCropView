@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,12 +21,95 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVJ-QH-uur">
+                                <rect key="frame" x="36" y="241" width="303" height="80"/>
+                                <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="brM-QT-fjd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="图片裁剪">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goImageCropTestingPage:" destination="whP-gf-Uak" eventType="touchUpInside" id="HDz-BL-kCU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73V-4Q-dpG">
+                                <rect key="frame" x="36" y="336" width="303" height="80"/>
+                                <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="d1L-RD-mPP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="裁剪同步">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goImageCropTestingPage2:" destination="whP-gf-Uak" eventType="touchUpInside" id="PlU-ej-fQk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Wb-Br-KK3">
+                                <rect key="frame" x="36" y="435" width="303" height="80"/>
+                                <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="WBr-VJ-lC4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="图片裁剪页">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goImageCropTestingPage3:" destination="whP-gf-Uak" eventType="touchUpInside" id="a6s-S2-mnv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cew-KN-kMW">
+                                <rect key="frame" x="36" y="537" width="303" height="80"/>
+                                <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="DhY-nw-N5J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="视频裁剪页">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goImageCropTestingPage4:" destination="whP-gf-Uak" eventType="touchUpInside" id="bHq-YT-SgI"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9LV-a2-jFz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="233"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Wb-Br-KK3" firstAttribute="trailing" secondItem="jVJ-QH-uur" secondAttribute="trailing" id="131-OT-QU7"/>
+                            <constraint firstItem="5Wb-Br-KK3" firstAttribute="leading" secondItem="jVJ-QH-uur" secondAttribute="leading" id="190-JN-fYZ"/>
+                            <constraint firstItem="73V-4Q-dpG" firstAttribute="trailing" secondItem="jVJ-QH-uur" secondAttribute="trailing" id="3Me-l5-SHp"/>
+                            <constraint firstItem="73V-4Q-dpG" firstAttribute="top" secondItem="jVJ-QH-uur" secondAttribute="bottom" constant="15" id="7TU-qJ-ney"/>
+                            <constraint firstAttribute="trailing" secondItem="9LV-a2-jFz" secondAttribute="trailing" id="DJB-Pi-GK2"/>
+                            <constraint firstItem="jVJ-QH-uur" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="20" id="NDU-KQ-gb9"/>
+                            <constraint firstItem="jVJ-QH-uur" firstAttribute="top" secondItem="9LV-a2-jFz" secondAttribute="bottom" constant="8" id="NwH-uu-nYk"/>
+                            <constraint firstItem="9LV-a2-jFz" firstAttribute="top" secondItem="TpU-gO-2f1" secondAttribute="top" id="Od0-CM-1vQ"/>
+                            <constraint firstItem="Cew-KN-kMW" firstAttribute="trailing" secondItem="jVJ-QH-uur" secondAttribute="trailing" id="QHL-1p-S22"/>
+                            <constraint firstItem="5Wb-Br-KK3" firstAttribute="top" secondItem="73V-4Q-dpG" secondAttribute="bottom" constant="19" id="VQs-RT-Hbr"/>
+                            <constraint firstItem="9LV-a2-jFz" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="XTe-TI-IBM"/>
+                            <constraint firstItem="Cew-KN-kMW" firstAttribute="leading" secondItem="jVJ-QH-uur" secondAttribute="leading" id="eTU-oy-BfN"/>
+                            <constraint firstItem="73V-4Q-dpG" firstAttribute="leading" secondItem="jVJ-QH-uur" secondAttribute="leading" id="fqR-a2-aim"/>
+                            <constraint firstItem="Cew-KN-kMW" firstAttribute="top" secondItem="5Wb-Br-KK3" secondAttribute="bottom" constant="22" id="gjo-Qk-koo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jVJ-QH-uur" secondAttribute="trailing" constant="20" id="pfk-d7-hPh"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="Cew-KN-kMW" secondAttribute="bottom" constant="50" id="w4E-W8-5RD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="9LV-a2-jFz" id="vyW-H4-3M1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
         </scene>
     </scenes>
 </document>

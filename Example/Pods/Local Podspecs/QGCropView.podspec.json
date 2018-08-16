@@ -1,0 +1,45 @@
+{
+  "name": "QGCropView",
+  "version": "0.1.0",
+  "summary": "A short description of QGCropView.",
+  "description": "图片裁剪,视频裁剪,Any裁剪",
+  "homepage": "https://github.com/Quanhua-Guan/QGCropView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xinmuheart@163.com": "xinmuheart@gmail.com"
+  },
+  "source": {
+    "git": "git@github.com:Quanhua-Guan/QGCropView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": [
+    "QGCropView/Classes/*.{m,h}",
+    "QGCropView/Classes/**/*.{m,h}"
+  ],
+  "resources": [
+    "QGCropView/Assets/*.bundle",
+    "QGCropView/Classes/*.xib",
+    "QGCropView/Classes/**/*.xib"
+  ],
+  "public_header_files": "QGCropView/Classes/*.h",
+  "dependencies": {
+    "Masonry": [
+
+    ],
+    "SVProgressHUD": [
+
+    ],
+    "SDVersion": [
+
+    ]
+  },
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC"
+  }
+}

@@ -1,0 +1,31 @@
+PODS:
+  - Masonry (1.1.0)
+  - QGCropView (0.1.0):
+    - Masonry
+    - SDVersion
+    - SVProgressHUD
+  - SDVersion (4.3.2)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - QGCropView (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - SDVersion
+    - SVProgressHUD
+
+EXTERNAL SOURCES:
+  QGCropView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  QGCropView: 291f179de747cf656f88bead241f12cdcaa94b5b
+  SDVersion: 18f32c835c1543611fcfae3c6accd9a04b90597e
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: b30a49c65df4d5249f0761d35aaba56536399924
+
+COCOAPODS: 1.5.3

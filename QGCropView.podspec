@@ -18,25 +18,28 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+图片裁剪,视频裁剪,Any裁剪
                        DESC
 
-  s.homepage         = 'https://github.com/xinmuheart@163.com/QGCropView'
+  s.homepage         = 'https://github.com/Quanhua-Guan/QGCropView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'xinmuheart@163.com' => 'yuyuan@meiyaapp.com' }
-  s.source           = { :git => 'https://github.com/xinmuheart@163.com/QGCropView.git', :tag => s.version.to_s }
+  s.author           = { 'xinmuheart@163.com' => 'xinmuheart@gmail.com' }
+  s.source           = { :git => 'git@github.com:Quanhua-Guan/QGCropView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'QGCropView/Classes/**/*'
   
+  s.source_files = 'QGCropView/Classes/*.{m,h}', 'QGCropView/Classes/**/*.{m,h}'
+  s.resources = 'QGCropView/Assets/*.bundle', 'QGCropView/Classes/*.xib', 'QGCropView/Classes/**/*.xib'
+  s.public_header_files = 'QGCropView/Classes/*.h'
   # s.resource_bundles = {
   #   'QGCropView' => ['QGCropView/Assets/*.png']
   # }
+  #s.frameworks = 'UIKit', 'AVFoundation'
+  s.dependency 'Masonry'
+  s.dependency 'SVProgressHUD'
+  s.dependency 'SDVersion'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
 end
